@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Millennium Falcon</title>
+
+		<link rel="stylesheet" href="public/index.css">
+
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+      }
+    </script>
+	</head>
+	<body>
+    <div id="heading">
+      <h1>THE MILLENNIUM FALCON</h1>
+      <div class="border"></div>
+      <p id="result"></p>
+      <div id="buttonContainer">
+        <button class="model" id="Onion Ring">Onion Ring</button>
+        <button class="model" id="Salad">Salad</button>
+        <button class="model" id="Hamburger">Hamburger</button>
+      </div>
+    </div>
+    <div id="btn-ARmode">
+      <button id="AR-btn">AR Mode</button>
+    </div>
+    <div id="progress-container">
+      <div id="progress">Engaging Hyperdrive...</div>
+    </div>
+    
+		<script type="module" src="./main.js"></script>
+    <!-- <script type="module" src="./linkAR.js"></script> -->
+    
+	</body>
+</html>
